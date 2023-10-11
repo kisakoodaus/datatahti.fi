@@ -1,5 +1,0 @@
----
-layout: none
-permalink: '/aiemmat-vuodet.html'
----
-<meta http-equiv="refresh" content="0; url={{ "/aiemmat-vuodet" | relative_path }}">
