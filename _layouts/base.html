@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel='stylesheet' type='text/css' media='screen' href="{{ "/assets/css/main.css" | relative_url }}">
+    <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+    <title>Datatähti</title>
+
+</head>
+
+<body>
+<nav class="nav" id="nav">
+    <button id="show" onclick="showNav()"> </button>
+    <ol>
+      {% assign index = "/" | relative_url %}
+      <li><a id="logo-link" href="{{ index }}"><img src="{{ "/assets/img/datat%C3%A4hti_logo_t%C3%A4hti.svg" | relative_url }}" id="nav-logo-mobile"></a></li>
+        <li><button id="hide" onclick="hideNav()"> &#x2715;</button></li>
+        <li><a id="logo-link" href="{{ index }}"><img src="{{ "assets/img/datat%C3%A4hti_logo.svg" | relative_url }}" id="nav-logo"></a></li>
+        <li><a href="{{ index }}#osallistuminen">Osallistuminen</a></li>
+        <li> <a href="{{ index }}#palkinnot">Palkinnot</a></li>
+        <li><a href="{{ index }}#jatkokilpailut">Jatkokilpailut</a></li>
+        <li><a href="{{ index }}#yhteiso">Liity yhteisöön</a></li>
+        <li><a href="{{ index }}#jarjestajat">Järjestäjät</a></li>
+        <li><a href="{{ index }}#yhteystiedot">Yhteystiedot</a></li>
+        <li>|</li>
+        <li> <a href="{{ "/aiemmat-vuodet" | relative_url }}">Aiemmat vuodet</a></li>
+        <li> <a href="{{ "/en-info" | relative_url }}">In English</a> </li>
+    </ol>
+</nav>
+{{ content }}
+</body>
+</html>
